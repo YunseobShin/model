@@ -1,8 +1,9 @@
-<h1>여기는 게시판 지난 글입니다.</h1>
+<h1>여기는 보낸 메일함입니다.</h1>
 <% @every_post.each do |p|%>
 제목: <%= p.title %></br>
+받는 이: <%= p.receiver %></br>
 내용: <%= p.content %></br>
 시간: <%= p.created_at %>
 <hr>
 <% end %>
-<h1><a href="/">글쓰러 가기</a></h1>
+<h1><a href="/">메일쓰러 가기</a></h1>
